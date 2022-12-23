@@ -9,12 +9,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AppTest {
 
-    private WebDriver driver;
-
     @Test
     public void helloSelenium(){
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeDriver driver = new ChromeDriver();
         //driver.manage().window().maximize();
         driver.get("https://automationexercise.com/");
 
